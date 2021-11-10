@@ -1,4 +1,12 @@
-# Try to move 1 file
-# Now find the file which is latest in a directory 
-## This step can be achive using checking the file creation time which file will have max time is our target file
-# Now Try to Detect File type for proper section
+## Python Automation Script
+that helps to divide all content in Downloads Folder to Sub Folder Category wish and to your desired location.
+
+### Functioning:
+  * using `shutil` and `os` modules of python move files from Source to Destination.
+  * again using `os` module loop through all files from Source Folder.
+  * using `os` check for file extension and move it to Desired Folder using `shutil` .
+
+### Files:
+  * **detection.py** loop thorugh files from Source Folder.
+  * **file_type.py** check extension for current file.
+  *  **moving.py** helps to move file from Source folder to Destination.
