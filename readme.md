@@ -1,6 +1,8 @@
 ## Python Automation Script
 that helps to divide all content in Downloads Folder to Sub Folder Category wish and to your desired location.
 
+**NOTE:** you need to change directory path to your download folder accordingly.
+
 ### Functioning:
   * using `shutil` and `os` modules of python move files from Source to Destination.
   * again using `os` module loop through all files from Source Folder.
