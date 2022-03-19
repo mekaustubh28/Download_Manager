@@ -1,4 +1,3 @@
-
 from stat import ST_CTIME
 import os, sys, time
 from moving import moving_file_on_detect
@@ -7,20 +6,15 @@ path = '/home/kaustubh/Downloads/'
 def mostRecentFile(path):
     all_files = os.listdir(path)
     all_files.sort()
-    recent_file_time = 0
-    recent_indx = 0
-    for index, file in enumerate(all_files):
-        file_time = os.stat(path+"/"+file).st_ctime
-        if(file_time > recent_file_time):
-            recent_file_time = file_time
-            recent_indx = index
-            
-    recent_file = all_files[recent_indx]
-    recent_file_path = path+recent_file
-    moving_file_on_detect(recent_file_path, recent_file)
-    return recent_file_path
-    
-
+    for file in all_files:
+        if (file == 'files'):
+            pass
+        else:
+            file_path = path+file
+            print(file_path)
+            moving_file_on_detect(file_path, file)
+        
+        return file
 
 while True:
     try:
